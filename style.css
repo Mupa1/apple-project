@@ -1,12 +1,10 @@
 /* TABLE OF CONTENT */
 
 /*
-  1. Google font import
-  2. Header
-  3. Main
-  4. Footer
+  1. Header
+  2. Main
+  3. Footer
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -19,7 +17,7 @@
 
 body {
   font-size: 100%;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   line-height: 1;
   display: grid;
   grid-template-rows: 6fr 2fr 1fr;
@@ -29,11 +27,31 @@ body {
 
 /* Start Header Navbar Section */
 header nav ul {
+  height: 35px;
   display: flex;
+  margin: 50px auto;
+  width: 80%;
+  background: linear-gradient(to bottom, #b3b3b3 0%, #6e6e6e 70%);
+  border: 1px solid #6e6e6e;
+  border-radius: 4px;
+}
+
+header nav ul li {
+  width: 100%;
+  border-right: 1px solid #6e6e6e;
+  border-left: 1px solid #b3b3b3;
+  border-left: none;
+  height: 100%;
+  padding-top: 8px;
+}
+
+header nav ul li a {
+  color: #fff;
 }
 
 /* Start Cover Background Section */
 .background-cover {
+  font-family: Roboto, Arial, sans-serif;
   z-index: -1;
   width: 100%;
   background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
