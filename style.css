@@ -1,5 +1,117 @@
+/* TABLE OF CONTENT */
+
+/*
+  1. Google font import
+  2. Header
+  3. Main
+  4. Footer
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1;
+  display: grid;
+  grid-template-rows: 6fr 2fr 1fr;
+  grid-gap: 3px;
+  overflow: auto;
+}
+
+/* Start Header Navbar Section */
+header nav ul {
+  display: flex;
+}
+
+/* Start Cover Background Section */
+.background-cover {
+  z-index: -1;
+  width: 100%;
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.background-cover h1,
+.background-cover h2,
+.background-cover h3 {
+  width: 67%;
+  margin: 30px auto;
+  line-height: 40px;
+}
+
+.background-cover h1 {
+  font-size: 350%;
+  font-weight: 100;
+}
+
+.background-cover h2 {
+  font-size: 190%;
+  font-weight: 300;
+}
+
+.background-cover h3 {
+  font-size: 160%;
+  font-weight: 300;
+}
+
+/* Start Promo Section */
+.promo-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 100%;
+}
+
+.promo-section img {
+  max-width: 100%;
+  min-width: 275px;
+}
+
+/* Start Footer Section */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  color: #6e6e6e;
+  line-height: 24px;
+}
+
+footer .right-box-footer,
+footer .footer-nav {
+  margin: 20px auto;
+}
+
+footer div p {
+  font-size: 64%;
+}
+
+footer nav ul {
+  font-size: 65%;
+  display: flex;
+}
+
+footer nav ul li {
+  margin-left: 6px;
+}
+
+footer nav ul li::after {
+  content: " |";
+}
+
+footer .footer-nav img {
+  margin: -2px 0 0 6px;
+}
+
+footer div p a,
+footer nav ul li a {
+  color: #08c;
 }
