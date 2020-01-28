@@ -1,6 +1,6 @@
 # apple-project
 
-> The apple-project involves cloning apple.com website using backgrounds and gradients similar to the screenshot below. 
+> The apple-project is a clone of the apple.com website by using backgrounds and gradients. 
 
 ![screenshot](./images/apple-page-screenshot.png)
 
@@ -13,7 +13,7 @@
 
 - Github: [@githubhandle](https://github.com/Mupa1)
 - Twitter: [@twitterhandle](https://twitter.com/mupa_mmbetsa)
-- Linkedin: [linkedin](https://www.linkedin.com/in/mupa-nzaphila-644788103/)
+- Linkedin: [linkedin](https://www.linkedin.com/in/mupa)
 
 ## 🤝 Contributing
 
