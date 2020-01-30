@@ -2,7 +2,7 @@
 
 > The apple-project is a clone of the apple.com website by using backgrounds and gradients. 
 
-![screenshot](./images/apple-page-screenshot.png)
+![screenshot](./images/screenshot.png)
 
 ## Built With
 
@@ -11,9 +11,9 @@
 
 ## Author
 
-- Github: [@githubhandle](https://github.com/Mupa1)
-- Twitter: [@twitterhandle](https://twitter.com/mupa_mmbetsa)
-- Linkedin: [linkedin](https://www.linkedin.com/in/mupa)
+- Github: [@mupa1](https://github.com/Mupa1)
+- Twitter: [@mupa_mmbetsa](https://twitter.com/mupa_mmbetsa)
+- Linkedin: [mupa](https://www.linkedin.com/in/mupa)
 
 ## 🤝 Contributing
 
@@ -24,9 +24,3 @@ Feel free to check the [issues page](https://github.com/Mupa1/apple-project/issu
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Microverse Community
-- Standup Team - sandpipers
-- ALC 4.0
