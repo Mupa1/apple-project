@@ -21,34 +21,61 @@ body {
   line-height: 1;
   display: flex;
   flex-direction: column;
-  grid-gap: 3px;
   overflow: auto;
   height: 110vh;
 }
 
 /* Start Header Navbar Section */
 header nav ul {
-  height: 35px;
+  height: 37px;
   display: flex;
   margin: 50px auto;
   width: 80%;
-  background: linear-gradient(to bottom, #b3b3b3 0%, #6e6e6e 70%);
-  border: 1px solid #6e6e6e;
+  border: 1px solid rgba(159,158,158,1);
   border-radius: 4px;
+  background: rgb(88,87,87);
+  background: linear-gradient(360deg, rgba(88,87,87,1) 0%, rgba(88,87,87,1) 39%, rgba(159,158,158,1) 100%);
 }
 
 header nav ul li {
   width: 100%;
   border-right: 1px solid #6e6e6e;
-  border-left: 1px solid #b3b3b3;
   border-left: none;
   height: 100%;
-  padding-top: 8px;
-
+  padding-top: 7px;
 }
 
 header nav ul li a {
   color: #fff;
+  font-weight: 400;
+  font-size: 80%;
+}
+
+#search-container {
+  width: 130%;
+}
+
+#search-box {
+  background: rgb(88,87,87);
+  background: linear-gradient(360deg, rgba(88,87,87,1) 0%, rgba(88,87,87,1) 39%, rgba(159,158,158,1) 100%);
+  border: 1px solid;
+  box-shadow: 5px 10px rgb(88,87,87) inset;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 20px; 
+}
+
+#search-container label {
+  position: relative;
+}
+
+#search-container i {
+  position: absolute;
+  top: 1px;
+}
+
+header nav ul li:first-child a {
+  font-size: 120%;
 }
 
 /* Start Cover Background Section */
