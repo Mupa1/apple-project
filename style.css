@@ -29,7 +29,23 @@ footer a {
   color: #08c;
 }
 
-/* Start .Header Navbar Section */
+footer nav ul li {
+  margin-left: 6px;
+}
+
+footer nav ul {
+  font-size: 64%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Start Header/ Background Section */
+.background-cover h1 a,
+.background-cover h2 a,
+.background-cover h3 a {
+  color: #fff;
+}
+
 .header nav ul {
   height: 36px;
   display: flex;
@@ -50,8 +66,8 @@ footer a {
 }
 
 .header nav ul li:nth-child(-n+8):hover {
-  background: rgb(55,55,56);
-  background: radial-gradient(circle, rgba(55,55,56,1) 0%, rgba(84,83,83,1) 100%);
+  background: rgb(55, 55, 56);
+  background: radial-gradient(circle, rgba(55, 55, 56, 1) 0%, rgba(84, 83, 83, 1) 100%);
 }
 
 .header nav ul li a {
@@ -86,11 +102,14 @@ footer a {
   font-size: 80%;
 }
 
+.background-cover h3:hover a {
+  text-decoration: underline;
+}
+
 .header nav ul li:first-child a {
   font-size: 120%;
 }
 
-/* Start Cover Background Section */
 .background-cover {
   font-family: Roboto, Arial, sans-serif;
   width: 100%;
@@ -100,12 +119,6 @@ footer a {
   text-align: center;
 }
 
-.background-cover h1 a,
-.background-cover h2 a,
-.background-cover h3 a {
-  color: #fff;
-}
-
 .background-cover h1,
 .background-cover h2,
 .background-cover h3 {
@@ -113,10 +126,6 @@ footer a {
   margin: 30px auto;
   line-height: 40px;
   color: #fff;
-}
-
-.background-cover h3:hover a {
-  text-decoration: underline;
 }
 
 .background-cover h1 {
@@ -167,22 +176,12 @@ footer div p {
   font-size: 64%;
 }
 
-footer nav ul {
-  font-size: 64%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-footer nav ul li {
-  margin-left: 6px;
-}
-
-footer nav ul li::after {
-  content: " |";
+footer nav ul li + li::before {
+  content: " | ";
 }
 
 footer .footer-nav img {
-  margin: 2px 0 0 6px;
+  vertical-align: middle;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -216,11 +215,6 @@ footer .footer-nav img {
 
   footer {
     flex-direction: column-reverse;
-  }
-
-  footer .footer-nav img {
-    width: 10px;
-    margin-left: 6px;
   }
 
   footer .right-box-footer,
