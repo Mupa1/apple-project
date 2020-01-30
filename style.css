@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   grid-gap: 3px;
   overflow: auto;
-  height: 100vh;
+  height: 110vh;
 }
 
 /* Start Header Navbar Section */
@@ -89,10 +89,13 @@ header nav ul li a {
 .promo-section {
   display: flex;
   max-width: 100%;
+  
 }
 
 .promo-section img {
   width: 100%;
+  margin: 3px;
+  height: 110%;
 }
 
 /* Start Footer Section */
@@ -102,11 +105,14 @@ footer {
   justify-content: center;
   color: #6e6e6e;
   line-height: 24px;
+  bottom: 1;
 }
 
 footer .right-box-footer,
 footer .footer-nav {
   margin: 20px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 footer div p {
@@ -114,14 +120,13 @@ footer div p {
 }
 
 footer nav ul {
-  font-size: 65%;
+  font-size: 64%;
   display: flex;
   flex-wrap: wrap;
 }
 
 footer nav ul li {
   margin-left: 6px;
-
 }
 
 footer nav ul li::after {
@@ -135,4 +140,101 @@ footer .footer-nav img {
 footer div p a,
 footer nav ul li a {
   color: #08c;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+
+  header {
+    font-size: 50%;
+    font-weight: 600;
+    line-height: 5px;
+  }
+
+  .background-cover h1,
+  .background-cover h2,
+  .background-cover h3 {
+    width: 95%;
+    line-height: 25px;
+  }
+
+  .background-cover h3 {
+    margin-bottom: 340px;
+  }
+
+  footer div p,
+  footer nav ul {
+    font-size: 35%;
+    text-align: center;
+  }
+
+  footer {
+  flex-direction: column-reverse;
+  }
+
+  footer .footer-nav img {
+    width: 10px;
+    margin-left: 6px;
+  }
+
+  footer .right-box-footer,
+  footer .footer-nav {
+  margin: 0 auto;
+  line-height: 12px;
+  }
+
+  footer .footer-nav {
+    margin-top: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    height: 100vh;
+  }
+
+  header {
+    font-size: 60%;
+    font-weight: 600;
+  }
+
+  .background-cover h1,
+  .background-cover h2,
+  .background-cover h3 {
+    width: 95%;
+  }
+
+  footer div p {
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    height: 110vh;
+  }
+
+  header {
+    font-size: 100%;
+    font-weight: 600;
+  }
+
+  .background-cover h1,
+  .background-cover h2,
+  .background-cover h3 {
+    width: 67%;
+  }
+
+  footer div p {
+    text-align: left;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
 }
