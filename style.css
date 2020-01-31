@@ -1,0 +1,343 @@
+/* TABLE OF CONTENT */
+
+/*
+  1. Header
+  2. Main
+  3. Footer
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  line-height: 1;
+  height: 110vh;
+  overflow: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  color: #08c;
+}
+
+footer nav ul li {
+  margin-left: 6px;
+}
+
+footer nav ul {
+  font-size: 64%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Start Header/ Background Section */
+.background-cover h1 a,
+.background-cover h2 a,
+.background-cover h3 a {
+  color: #fff;
+}
+
+.header nav ul {
+  height: 36px;
+  display: flex;
+  margin: 50px auto;
+  width: 80%;
+  border: 1px solid rgb(88, 87, 87);
+  border-radius: 5px;
+  background: rgb(88, 87, 87);
+  background: linear-gradient(360deg, rgba(88, 87, 87, 1) 0%, rgba(88, 87, 87, 1) 39%, rgba(159, 158, 158, 1) 100%);
+}
+
+.header nav ul li {
+  width: 100%;
+  border-right: 1px solid #6e6e6e;
+  border-left: none;
+  height: 100%;
+  padding-top: 6px;
+}
+
+.header nav ul li:nth-child(-n+8):hover {
+  background: rgb(55, 55, 56);
+  background: radial-gradient(circle, rgba(55, 55, 56, 1) 0%, rgba(84, 83, 83, 1) 100%);
+}
+
+.header nav ul li a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 80%;
+}
+
+#search-box {
+  background: rgb(88, 87, 87);
+  background: linear-gradient(360deg, rgba(88, 87, 87, 1) 0%, rgba(88, 87, 87, 1) 39%, rgba(159, 158, 158, 1) 100%);
+  border: 1px solid;
+  box-shadow: 5px 10px rgb(88, 87, 87) inset;
+  border-radius: 10px;
+  width: 80%;
+  height: 70%;
+}
+
+.search-container label {
+  position: relative;
+}
+
+.search-container .fa-search {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  padding: 6px 0 0 6px;
+  font-size: 80%;
+}
+
+.background-cover h3:hover a {
+  text-decoration: underline;
+}
+
+.header nav ul li:first-child a {
+  font-size: 120%;
+}
+
+.background-cover {
+  font-family: Roboto, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.background-cover h1,
+.background-cover h2,
+.background-cover h3 {
+  width: 67%;
+  margin: 30px auto;
+  line-height: 40px;
+  color: #fff;
+}
+
+.background-cover h1 {
+  font-size: 350%;
+  font-weight: 100;
+}
+
+.background-cover h2 {
+  font-size: 190%;
+  font-weight: 300;
+}
+
+.background-cover h3 {
+  font-size: 160%;
+  font-weight: 300;
+}
+
+/* Start Promo Section */
+.promo-section {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+
+.promo-section img {
+  width: 100%;
+  padding: 2px;
+  min-height: 110%;
+}
+
+/* Start Footer Section */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #6e6e6e;
+  line-height: 24px;
+  bottom: 1;
+}
+
+footer .right-box-footer,
+footer .footer-nav {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+footer div p {
+  font-size: 64%;
+}
+
+footer nav ul li + li::before {
+  content: " | ";
+}
+
+footer .footer-nav img {
+  vertical-align: middle;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+
+  .header {
+    font-size: 50%;
+    font-weight: 600;
+    line-height: 5px;
+  }
+
+  .search-container .fa-search {
+    padding: 0 0 0 2px;
+  }
+
+  .background-cover h1,
+  .background-cover h2,
+  .background-cover h3 {
+    width: 95%;
+    line-height: 25px;
+  }
+
+  .background-cover h3 {
+    margin-bottom: 340px;
+  }
+
+  footer div p,
+  footer nav ul {
+    font-size: 35%;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  footer .right-box-footer,
+  footer .footer-nav {
+    margin: 0 auto;
+    line-height: 12px;
+  }
+
+  footer .footer-nav {
+    margin-top: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    height: 100vh;
+  }
+
+  .header {
+    font-size: 60%;
+    font-weight: 600;
+  }
+
+  #search-box {
+    background: rgb(88, 87, 87);
+    background: linear-gradient(360deg, rgba(88, 87, 87, 1) 0%, rgba(88, 87, 87, 1) 39%, rgba(159, 158, 158, 1) 100%);
+    border: 1px solid;
+    box-shadow: 5px 10px rgb(88, 87, 87) inset;
+    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+  }
+
+  .background-cover h1,
+  .background-cover h2,
+  .background-cover h3 {
+    width: 95%;
+  }
+
+  footer div p {
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    height: 110vh;
+  }
+
+  .header {
+    font-size: 100%;
+    font-weight: 600;
+  }
+
+  .background-cover h1,
+  .background-cover h2,
+  .background-cover h3 {
+    width: 67%;
+  }
+
+  .background-cover h3 {
+    margin-bottom: 10%;
+  }
+
+  footer div p {
+    text-align: left;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
+
+/* Medium devices (Portrait iPad 3, 4 and Pro 9.7") */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1023px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .background-cover h1,
+  .background-cover h2,
+  .background-cover h3 {
+    width: 80%;
+  }
+
+  .background-cover h3 {
+    margin-bottom: 50%;
+  }
+
+  footer div p,
+  footer nav ul {
+    font-size: 50%;
+  }
+}
+
+/* Medium Devices (Portrait iPad Pro 12.9) */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .background-cover h1 {
+    margin-top: 10%;
+  }
+
+  .background-cover h3 {
+    margin-bottom: 60%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+
+  .background-cover h1 {
+    margin-top: 10%;
+  }
+}

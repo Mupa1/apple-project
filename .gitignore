@@ -1,0 +1,7 @@
+# ignore these files and folders
+
+node_modules
+
+package-lock.json
+
+*.DS_Store
