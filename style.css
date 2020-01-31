@@ -19,8 +19,8 @@ body {
   font-size: 100%;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   line-height: 1;
-  height: 110vh; 
-  overflow: auto; 
+  height: 110vh;
+  overflow: auto;
 }
 
 main {
@@ -252,7 +252,6 @@ footer .footer-nav img {
     width: 80%;
     height: 70%;
   }
-  
 
   .background-cover h1,
   .background-cover h2,
@@ -296,40 +295,40 @@ footer .footer-nav img {
 }
 
 /* Medium devices (Portrait iPad 3, 4 and Pro 9.7") */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1023px) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1023px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .background-cover h1,
-    .background-cover h2,
-    .background-cover h3 {
-      width: 80%;
-    }
+  .background-cover h1,
+  .background-cover h2,
+  .background-cover h3 {
+    width: 80%;
+  }
 
-    .background-cover h3 {
-      margin-bottom: 50%;
-    }
-    
-    footer div p,
-    footer nav ul {
-      font-size: 50%;
-    }
+  .background-cover h3 {
+    margin-bottom: 50%;
+  }
+
+  footer div p,
+  footer nav ul {
+    font-size: 50%;
+  }
 }
 
 /* Medium Devices (Portrait iPad Pro 12.9) */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .background-cover h1 {
-      margin-top: 10%;
-    }
+  .background-cover h1 {
+    margin-top: 10%;
+  }
 
-    .background-cover h3 {
-      margin-bottom: 60%;
-    }
+  .background-cover h3 {
+    margin-bottom: 60%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
